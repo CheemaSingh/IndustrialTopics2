@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quick guide to integrate simple Image Cropping tool into website (For beginners)</title>
+        <style>
+
+    html body {
+        font-family: Source Code Pro, sans-serif;
+        background-color: #efefef;
+    }
+
+    :root {
+        --accent: #520e82;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.5.0/croppie.css">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Code%20Pro">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c#.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/jquery.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+
+
+
+ <meta name="generator" content="Hugo 0.29" />
+        
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Quick guide to integrate simple Image Cropping tool into website (For beginners)</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="posts">Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:shakti.cheema@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/cheemasingh/"><i class="fa fa-github"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/posts/post1/">Quick guide to integrate simple Image Cropping tool into website (For beginners)</a></h4>
+    <h5>October 5, 2017</h5>
+     <kbd class="item-tag">Developer</kbd>  <kbd class="item-tag">Image Cropping</kbd>  <kbd class="item-tag">Website</kbd>  <kbd class="item-tag">Beginner</kbd> 
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<h3 id="as-a-beginner-while-developing-a-website-usually-people-get-stuck-when-they-need-to-include-module-for-profile-picture-upload">As a beginner, while developing a website usually people get stuck when they need to include module for profile picture upload.</h3>
+
+<p>There are many tools available around web which are free to use for cropping images. But the major challenges for beginner are :</p>
+
+<ul>
+<li><code>Which tool to use?</code></li>
+<li><code>How to include it in website?</code></li>
+<li><code>How to save image in server folder after cropping?</code></li>
+<li><code>How to make your module responsive? So that it works on all screen sizes</code></li>
+</ul>
+
+<h3 id="if-you-are-having-the-above-questions-in-your-mind-then-you-are-right-place">If you are having the above questions in your mind, then you are right place!!</h3>
+
+<p>I started coding few years back, I found answers to my questions/problems myself but there was time when I used to stuck at a problem for days.
+When I was working for a school project, there was a need to include profile picture upload module which took me a week to get it done.
+I wrote this blog post so that it could help other beginners to workout the thing within an hour.</p>
+
+<h3 id="the-simplest-tool-i-found-for-image-cropping-is">The simplest tool I found for image cropping is:</h3>
+
+<ul>
+<li><code>Croppie</code></li>
+</ul>
+
+<p>Lets begin with croppie</p>
+
+<h1 id="croppie">Croppie</h1>
+
+<p>Croppie is one of the simplest, easy to intergrate and completely based on javascript. It provides you zooming capability and works well on all browsers and screen sizes. You can customize its css and make it responsive.</p>
+
+<p>You can easily use croppie by including its css and javascript file.</p>
+
+<p><code>For getting started, include the css in header.</code></p>
+
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/croppie/2.5.0/croppie.css&quot; /&gt;
+</code></pre>
+
+<p><code>Include javascript before closing the body tag.</code></p>
+
+<pre><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/croppie/2.5.0/croppie.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>We include javascript before closing tag because it makes sure all of the dom elements are loaded first before the execution of javascript functions.</p>
+
+<p><code>Then you just need to call croppie() for the object you want, such as image.</code></p>
+
+<pre><code>&lt;script&gt;
+
+var mycroppiedemo = $('.my-croppie').croppie({ 
+    enableExif: false,
+    showZoomer: true,
+    enforceBoundary:true,
+    boundary: {
+      width: 400,
+      height: 400
+    },
+    viewport:{
+    	width:300,
+    	height:300,
+    	type:'square'
+    }
+  });
+&lt;/script&gt;
+</code></pre>
+
+<p>There are many parameters available such as:</p>
+
+<ul>
+<li><code>boundary</code> is the outer container.</li>
+<li><code>customClass</code> is the class which you can give to container to make it responsive.</li>
+<li><code>enableZoom</code> allows you to zoom in and out.</li>
+<li><code>viewport</code> is the inner container.</li>
+</ul>
+
+<p><code>For saving the image you need to use the croppie result function on crop button click.
+You can pass the type,size,format,quality of the cropped image</code></p>
+
+<p>You can use the following code:</p>
+
+<pre><code>&lt;script&gt;
+$( &quot;#crop&quot; ).click(function() {
+  mycroppiedemo.croppie('result', {
+            type: 'canvas',
+            size: { width: 300, height: 300 }
+        }).then(function(croppedImage) {
+  	document.getElementById('croppedimg').setAttribute( 'src',croppedImage);
+});
+});
+&lt;/script&gt;
+</code></pre>
+
+<p>Here <code>croppedImage</code> is the base64 form of data.
+Which you can easily convert and save at your server folder by any language, I have used c# for that.</p>
+
+<pre><code>public bool SaveImage(string ImgStr, string ImgName)
+{   //Here you can replace ImgStr with croppedImage
+    String path = HttpContext.Current.Server.MapPath(&quot;~/ImageFolder&quot;); 
+
+
+    //Check if directory exist
+    if (!System.IO.Directory.Exists(path))
+    {
+    	//Create directory if it doesn't exist
+        System.IO.Directory.CreateDirectory(path); 
+
+    }
+
+    string imageName = ImgName + &quot;.jpg&quot;;
+
+    //set the image path
+    string imgPath = Path.Combine(path, imageName);
+
+    byte[] imageBytes = Convert.FromBase64String(ImgStr);
+
+    File.WriteAllBytes(imgPath, imageBytes);
+
+    return true;
+}
+</code></pre>
+
+<h3 id="below-is-the-working-example-for-cropping-image">Below is the working example for cropping image</h3>
+
+<p><br><br>
+<div>
+<img class="my-croppie"  src="/images/croppie.jpg" />
+</div>
+<div style="text-align: center;">
+<button id="cropnow1">Crop Now</button>
+<br><br>
+<div id="cropped1" style="width:100%; text-align:center; display: none;">
+    <div><h3>Cropped Image:</h3></div>
+<img id="croppedimg1">
+</div>
+</div></p>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cheematechblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.5.0/croppie.js"></script>
+
+<script>
+
+var mycroppiedemo = $('.my-croppie').croppie({ 
+    enableExif: false,
+    showZoomer: true,
+    enforceBoundary:true,
+    boundary: {
+      width: 400,
+      height: 400
+    },
+    viewport:{
+    	width:300,
+    	height:300,
+    	type:'square'
+    }
+  });
+
+$( "#cropnow1" ).click(function() {
+  mycroppiedemo.croppie('result', {
+            type: 'canvas',
+            size: { width: 300, height: 300 }
+        }).then(function(html) {
+        	$('#cropped1').show();
+  	document.getElementById('croppedimg1').setAttribute( 'src',html);
+});
+});
+</script>
+
+
+    </body>
+
+</html>
+

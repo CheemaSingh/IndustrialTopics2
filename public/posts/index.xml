@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Shakti Singh Cheema Tech Blog</title>
+    <link>http://navneetchouhan.com/posts/</link>
+    <description>Recent content in Posts on Shakti Singh Cheema Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://navneetchouhan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quick guide to integrate simple Image Cropping tool into website (For beginners)</title>
+      <link>http://navneetchouhan.com/posts/post1/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://navneetchouhan.com/posts/post1/</guid>
+      <description>As a beginner, while developing a website usually people get stuck when they need to include module for profile picture upload. There are many tools available around web which are free to use for cropping images. But the major challenges for beginner are :
+ Which tool to use? How to include it in website? How to save image in server folder after cropping? How to make your module responsive?</description>
+    </item>
+    
+  </channel>
+</rss>
