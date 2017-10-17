@@ -7,12 +7,12 @@
         <style>
 
     html body {
-        font-family: Poppins, sans-serif;
-        background-color: white;
+        font-family: Source Code Pro, sans-serif;
+        background-color: #efefef;
     }
 
     :root {
-        --accent: #447dec;
+        --accent: #520e82;
         --border-width:  5px ;
     }
 
@@ -20,12 +20,14 @@
 
 
 <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.5.0/croppie.css">
 
 
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Code%20Pro">
 
 
  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
@@ -38,9 +40,12 @@
  
 
 
+
+
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
-     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/c#.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/jquery.min.js"></script>  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script> 
 
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -57,10 +62,13 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+
+
+
  <meta name="generator" content="Hugo 0.29" />
         
-        <link href="http://navneetchouhan.com/tags/index.xml" rel="alternate" type="application/rss+xml" title="Navneet Kaur Chauhan Blog" />
-        <link href="http://navneetchouhan.com/tags/index.xml" rel="feed" type="application/rss+xml" title="Navneet Kaur Chauhan Blog" />
+        <link href="http://navneetchouhan.com/tags/index.xml" rel="alternate" type="application/rss+xml" title="Shakti Singh Cheema Tech Blog" />
+        <link href="http://navneetchouhan.com/tags/index.xml" rel="feed" type="application/rss+xml" title="Shakti Singh Cheema Tech Blog" />
         
     </head>
 
@@ -97,9 +105,9 @@
                     
                         <ul class="nav navbar-nav navbar-right">
                             
-                                <li class="navbar-icon"><a href="mailto:navneet.chouhan88@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                                <li class="navbar-icon"><a href="mailto:shakti.cheema@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
                             
-                                <li class="navbar-icon"><a href="https://github.com/navneetchouhan/"><i class="fa fa-github"></i></a></li>
+                                <li class="navbar-icon"><a href="https://github.com/cheemasingh/"><i class="fa fa-github"></i></a></li>
                             
                         </ul>
                     
@@ -124,6 +132,20 @@
     
     
 
+    <h4><a href="/tags/responsive/">Responsive</a></h4>
+    <h5>January 1, 0001</h5>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
     <h4><a href="/tags/syntax-highlighting/">Syntax Highlighting</a></h4>
     <h5>January 1, 0001</h5>
     
@@ -138,22 +160,8 @@
     
     
 
-    <h4><a href="/tags/template/">Template</a></h4>
-    <h5>April 2, 2014</h5>
-    
-
-</div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/tags/themes/">Themes</a></h4>
-    <h5>September 28, 2014</h5>
+    <h4><a href="/tags/website/">Website</a></h4>
+    <h5>October 5, 2017</h5>
     
 
 </div>
@@ -180,6 +188,39 @@
             <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
 
         </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.5.0/croppie.js"></script>
+
+<script>
+
+var mycroppiedemo = $('.my-croppie').croppie({ 
+    enableExif: false,
+    showZoomer: true,
+    enforceBoundary:true,
+    boundary: {
+      width: 400,
+      height: 400
+    },
+    viewport:{
+    	width:300,
+    	height:300,
+    	type:'square'
+    }
+  });
+
+$( "#cropnow1" ).click(function() {
+  mycroppiedemo.croppie('result', {
+            type: 'canvas',
+            size: { width: 300, height: 300 }
+        }).then(function(html) {
+        	$('#cropped1').show();
+  	document.getElementById('croppedimg1').setAttribute( 'src',html);
+});
+});
+</script>
+
 
     </body>
 
