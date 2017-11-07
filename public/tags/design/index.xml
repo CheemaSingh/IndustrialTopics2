@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Shakti Singh Cheema Tech Blog</title>
+    <link>http://navneetchouhan.com/tags/design/</link>
+    <description>Recent content in Design on Shakti Singh Cheema Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://navneetchouhan.com/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to include intro module into your website</title>
+      <link>http://navneetchouhan.com/posts/post3/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://navneetchouhan.com/posts/post3/</guid>
+      <description>Have you ever wondered how you can explain about your website to the users? If you have complicated UI or if there are lots of things to do in your webpage then, there is possibility that user might get lost.
+Best method to tackle this is to include simple intro tour which can guide users Are you wondering how Ok let’s begin,
+You can achieve this by Intro.js
+Intro.js is open-source and free to use.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -129,3 +129,14 @@ pre code{
 pre code{
 	color: white !important;
 }
+
+.introjs-tooltip {
+    direction: ltr !important;
+}
+
+.introjs-bullets ul li {
+    box-sizing: content-box;
+    list-style: none;
+    float: left;
+    margin: 0 2px !important;
+}
