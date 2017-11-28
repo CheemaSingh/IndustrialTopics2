@@ -319,6 +319,22 @@ Which you can easily convert and save at your server folder by any language, I h
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/intro.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/livestamp/1.1.2/livestamp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+<script>
+  
+  $('#datetimenw').attr('data-livestamp', new Date().toLocaleString());
+
+</script>
+
+
+<script>
+  $('#eventExample').on('change.livestamp', function() {
+   $.notify("Time Updated", "success");
+  }).livestamp();
+</script>
+
 <script>
 
 var mycroppiedemo = $('.my-croppie').croppie({ 

@@ -6,7 +6,7 @@
     <description>Recent content on Shakti Singh Cheema Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://navneetchouhan.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,6 +45,17 @@
       
       <guid>http://navneetchouhan.com/project/project4/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>How to show time as x-minute ago in your website</title>
+      <link>http://navneetchouhan.com/posts/post4/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://navneetchouhan.com/posts/post4/</guid>
+      <description>Have you ever wondered how to show time as x-minute ago in your website? Displaying date as DD/MM/YYYY hh:mm:ss is very common, but due the frequency of content posted on your website there could be a need to show time as x-minutes ago.
+Best method to this by using simple javascript libraries, which saves you a lot of server side coding. Are you wondering how Ok let’s begin,
+You can achieve this by moment.</description>
     </item>
     
     <item>

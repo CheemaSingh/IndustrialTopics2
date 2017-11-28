@@ -134,6 +134,20 @@
     
     
 
+    <h4><a href="/tags/js/">Js</a></h4>
+    <h5>January 1, 0001</h5>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
     <h4><a href="/tags/money/">Money</a></h4>
     <h5>October 17, 2017</h5>
     
@@ -181,20 +195,6 @@
     
 
 </div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/tags/user-experience/">User Experience</a></h4>
-    <h5>November 6, 2017</h5>
-    
-
-</div>
  
 
 </main>
@@ -228,6 +228,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.5.0/croppie.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/intro.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/livestamp/1.1.2/livestamp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+<script>
+  
+  $('#datetimenw').attr('data-livestamp', new Date().toLocaleString());
+
+</script>
+
+
+<script>
+  $('#eventExample').on('change.livestamp', function() {
+   $.notify("Time Updated", "success");
+  }).livestamp();
+</script>
 
 <script>
 
